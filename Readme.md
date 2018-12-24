@@ -13,4 +13,4 @@ To initialize master filters:
 * Handle the [MasterFilterDefaultValues](https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWinDashboardViewer_MasterFilterDefaultValuestopic) event to apply filtering to [Grid](https://documentation.devexpress.com/#Dashboard/CustomDocument15150) and [Tree View](https://documentation.devexpress.com/#Dashboard/CustomDocument17659).
 * Handle the [RangeFilterDefaultValue](https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWinDashboardViewer_RangeFilterDefaultValuetopic)</a> event to select the specified date range in the [Range Filter](https://documentation.devexpress.com/#Dashboard/CustomDocument15265).
 
-![](~/images/screenshot.png)
+![](https://github.com/DevExpress-Examples/how-to-apply-default-filtering-to-master-filters-in-dashboardviewer-t329583/blob/18.2.3%2B/images/screenshot.png)
