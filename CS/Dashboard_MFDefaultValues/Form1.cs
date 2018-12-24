@@ -7,9 +7,12 @@ namespace Dashboard_MFDefaultValues
     public partial class Form1 : DevExpress.XtraEditors.XtraForm {
         public Form1() {
             InitializeComponent();
+            dashboardViewer1.UseNeutralFilterMode = true;
             dashboardViewer1.ConfigureDataConnection += DashboardViewer1_ConfigureDataConnection;
             dashboardViewer1.MasterFilterDefaultValues += DashboardViewer1_MasterFilterDefaultValues;
             dashboardViewer1.RangeFilterDefaultValue += DashboardViewer1_RangeFilterDefaultValue;
+
+            dashboardViewer1.Dashboard = new Dashboard1();
         }
 
         private void DashboardViewer1_ConfigureDataConnection(object sender, DashboardConfigureDataConnectionEventArgs e)

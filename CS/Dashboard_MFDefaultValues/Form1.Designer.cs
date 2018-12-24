@@ -30,8 +30,6 @@
             // 
             // dashboardViewer1
             // 
-            this.dashboardViewer1.CustomDBSchemaProviderEx = null;
-            this.dashboardViewer1.DashboardSource = "Dashboard_MFDefaultValues.Dashboard1";
             this.dashboardViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboardViewer1.Location = new System.Drawing.Point(0, 0);
             this.dashboardViewer1.Name = "dashboardViewer1";

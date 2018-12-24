@@ -45,14 +45,13 @@
             DevExpress.DashboardCommon.DashboardLayoutItem dashboardLayoutItem3 = new DevExpress.DashboardCommon.DashboardLayoutItem();
             DevExpress.DashboardCommon.DashboardLayoutItem dashboardLayoutItem4 = new DevExpress.DashboardCommon.DashboardLayoutItem();
             this.gridDashboardItem1 = new DevExpress.DashboardCommon.GridDashboardItem();
-            this.dashboardExtractDataSource1 = new DevExpress.DashboardCommon.DashboardExtractDataSource();
             this.treeViewDashboardItem1 = new DevExpress.DashboardCommon.TreeViewDashboardItem();
             this.chartDashboardItem1 = new DevExpress.DashboardCommon.ChartDashboardItem();
             this.rangeFilterDashboardItem1 = new DevExpress.DashboardCommon.RangeFilterDashboardItem();
+            this.dashboardExtractDataSource1 = new DevExpress.DashboardCommon.DashboardExtractDataSource();
             ((System.ComponentModel.ISupportInitialize)(this.gridDashboardItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(dimension1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(measure1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dashboardExtractDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.treeViewDashboardItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(dimension2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(dimension3)).BeginInit();
@@ -63,14 +62,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.rangeFilterDashboardItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(dimension6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(measure3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardExtractDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // gridDashboardItem1
             // 
-            dimension1.DataMember = "SalesPerson";
+            dimension1.DataMember = "Sales Person";
             gridDimensionColumn1.WidthType = DevExpress.DashboardCommon.GridColumnFixedWidthType.Weight;
             gridDimensionColumn1.AddDataItem("Dimension", dimension1);
-            measure1.DataMember = "ExtendedPrice";
+            measure1.DataMember = "Extended Price";
             gridMeasureColumn1.WidthType = DevExpress.DashboardCommon.GridColumnFixedWidthType.Weight;
             gridMeasureColumn1.AddDataItem("Measure", measure1);
             this.gridDashboardItem1.Columns.AddRange(new DevExpress.DashboardCommon.GridColumnBase[] {
@@ -88,12 +88,6 @@
             this.gridDashboardItem1.Name = "Grid 1";
             this.gridDashboardItem1.ShowCaption = false;
             // 
-            // dashboardExtractDataSource1
-            // 
-            this.dashboardExtractDataSource1.ComponentName = "dashboardExtractDataSource1";
-            this.dashboardExtractDataSource1.FileName = "C:\\Data\\NWind_SalesPerson.dat";
-            this.dashboardExtractDataSource1.Name = "Extract Data Source 1";
-            // 
             // treeViewDashboardItem1
             // 
             this.treeViewDashboardItem1.ComponentName = "treeViewDashboardItem1";
@@ -104,6 +98,7 @@
             this.treeViewDashboardItem1.DataItemRepository.Clear();
             this.treeViewDashboardItem1.DataItemRepository.Add(dimension2, "DataItem0");
             this.treeViewDashboardItem1.DataItemRepository.Add(dimension3, "DataItem1");
+            this.treeViewDashboardItem1.DataMember = "";
             this.treeViewDashboardItem1.DataSource = this.dashboardExtractDataSource1;
             this.treeViewDashboardItem1.FilterDimensions.AddRange(new DevExpress.DashboardCommon.Dimension[] {
             dimension2,
@@ -120,11 +115,12 @@
             this.chartDashboardItem1.AxisX.TitleVisible = false;
             this.chartDashboardItem1.ComponentName = "chartDashboardItem1";
             dimension5.DataMember = "OrderDate";
-            measure2.DataMember = "ExtendedPrice";
+            measure2.DataMember = "Extended Price";
             this.chartDashboardItem1.DataItemRepository.Clear();
-            this.chartDashboardItem1.DataItemRepository.Add(dimension4, "DataItem2");
             this.chartDashboardItem1.DataItemRepository.Add(dimension5, "DataItem3");
             this.chartDashboardItem1.DataItemRepository.Add(measure2, "DataItem0");
+            this.chartDashboardItem1.DataItemRepository.Add(dimension4, "DataItem1");
+            this.chartDashboardItem1.DataMember = "";
             this.chartDashboardItem1.DataSource = this.dashboardExtractDataSource1;
             this.chartDashboardItem1.InteractivityOptions.IgnoreMasterFilters = false;
             this.chartDashboardItem1.Name = "Sales by Catgory";
@@ -150,10 +146,11 @@
             dimension6.DateTimeGroupInterval = DevExpress.DashboardCommon.DateTimeGroupInterval.MonthYear;
             this.rangeFilterDashboardItem1.Argument = dimension6;
             this.rangeFilterDashboardItem1.ComponentName = "rangeFilterDashboardItem1";
-            measure3.DataMember = "ExtendedPrice";
+            measure3.DataMember = "Extended Price";
             this.rangeFilterDashboardItem1.DataItemRepository.Clear();
             this.rangeFilterDashboardItem1.DataItemRepository.Add(dimension6, "DataItem0");
             this.rangeFilterDashboardItem1.DataItemRepository.Add(measure3, "DataItem1");
+            this.rangeFilterDashboardItem1.DataMember = "";
             this.rangeFilterDashboardItem1.DataSource = this.dashboardExtractDataSource1;
             this.rangeFilterDashboardItem1.InteractivityOptions.IgnoreMasterFilters = true;
             this.rangeFilterDashboardItem1.Name = "Range Filter 1";
@@ -162,6 +159,12 @@
             this.rangeFilterDashboardItem1.Series.AddRange(new DevExpress.DashboardCommon.SimpleSeries[] {
             simpleSeries2});
             this.rangeFilterDashboardItem1.ShowCaption = false;
+            // 
+            // dashboardExtractDataSource1
+            // 
+            this.dashboardExtractDataSource1.ComponentName = "dashboardExtractDataSource1";
+            this.dashboardExtractDataSource1.FileName = "C:\\Data\\SalesPerson.dat";
+            this.dashboardExtractDataSource1.Name = "Extract Data Source 1";
             // 
             // Dashboard1
             // 
@@ -202,7 +205,6 @@
             ((System.ComponentModel.ISupportInitialize)(dimension1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(measure1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDashboardItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dashboardExtractDataSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(dimension2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(dimension3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.treeViewDashboardItem1)).EndInit();
@@ -213,6 +215,7 @@
             ((System.ComponentModel.ISupportInitialize)(dimension6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(measure3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rangeFilterDashboardItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardExtractDataSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
