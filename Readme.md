@@ -3,11 +3,14 @@
 
 * [Form1.cs](./CS/Dashboard_MFDefaultValues/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_MFDefaultValues/Form1.vb))
 <!-- default file list end -->
-# How to apply default filtering to master filters in DashboardViewer
+# How to initialize master filters in Dashboard Viewer
 
 
-The following example shows how to apply default filtering to master filter items using <a href="https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWinDashboardViewerMembersTopicAll">API</a> of <a href="https://documentation.devexpress.com/#Dashboard/clsDevExpressDashboardWinDashboardViewertopic">DashboardViewer</a>. In this example, default filtering is applied to the following dashboard items.<br>- The <a href="https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWinDashboardViewer_MasterFilterDefaultValuestopic">MasterFilterDefaultValues</a> event is handled to apply filtering to <a href="https://documentation.devexpress.com/#Dashboard/CustomDocument15150">Grid</a> and <a href="https://documentation.devexpress.com/#Dashboard/CustomDocument17659">Tree View</a>.<br>- The <a href="https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWinDashboardViewer_RangeFilterDefaultValuetopic">RangeFilterDefaultValue</a> event is used to select the specified date range in the <a href="https://documentation.devexpress.com/#Dashboard/CustomDocument15265">Range Filter</a>.
+The following example shows how to initialize master filter in a dashboard loaded in the [DashboardViewer](https://documentation.devexpress.com/#Dashboard/clsDevExpressDashboardWinDashboardViewertopic) control. 
 
-<br/>
+To initialize master filters:
 
+* Handle the [MasterFilterDefaultValues](https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWinDashboardViewer_MasterFilterDefaultValuestopic) event to apply filtering to [Grid](https://documentation.devexpress.com/#Dashboard/CustomDocument15150) and [Tree View](https://documentation.devexpress.com/#Dashboard/CustomDocument17659).
+* Handle the [RangeFilterDefaultValue](https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWinDashboardViewer_RangeFilterDefaultValuetopic)</a> event to select the specified date range in the [Range Filter](https://documentation.devexpress.com/#Dashboard/CustomDocument15265).
 
+![](~/images/screenshot.png)

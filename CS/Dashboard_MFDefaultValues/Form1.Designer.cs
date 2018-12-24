@@ -37,8 +37,6 @@
             this.dashboardViewer1.Name = "dashboardViewer1";
             this.dashboardViewer1.Size = new System.Drawing.Size(919, 542);
             this.dashboardViewer1.TabIndex = 0;
-            this.dashboardViewer1.MasterFilterDefaultValues += new DevExpress.DashboardCommon.MasterFilterDefaultValuesEventHandler(this.dashboardViewer1_MasterFilterDefaultValues);
-            this.dashboardViewer1.RangeFilterDefaultValue += new DevExpress.DashboardCommon.RangeFilterDefaultValueEventHandler(this.dashboardViewer1_RangeFilterDefaultValue);
             // 
             // Form1
             // 
