@@ -3,7 +3,7 @@
 
 * [Form1.cs](./CS/Dashboard_MFDefaultValues/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_MFDefaultValues/Form1.vb))
 <!-- default file list end -->
-# How to initialize Master Filters in Dashboard Viewer
+# How to Initialize Master Filters in Dashboard Viewer
 
 
 The following example shows how to initialize master filter in a dashboard loaded in the [Dashboard Viewer](https://documentation.devexpress.com/#Dashboard/clsDevExpressDashboardWinDashboardViewertopic) control. 
